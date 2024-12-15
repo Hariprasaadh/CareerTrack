@@ -63,8 +63,8 @@ def main():
     # Title and Header Styling
     st.markdown(
         """
-        <h1 style='text-align: center; color: white;'>🎓 Interactive Quiz Generator</h1>
-        <h2 style='text-align: center; color: white;'>Generate MCQs for Better Learning!</h2>
+        <h1 style='text-align: center; color: white;'>🎓 AI-Powered Interactive Quiz Generator</h1>
+        <h2 style='text-align: center; color: white;'>Elevate Learning with Smart MCQs!</h2>
         """,
         unsafe_allow_html=True
     )
