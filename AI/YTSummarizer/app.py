@@ -28,7 +28,8 @@ prompt = PromptTemplate.from_template(
     ##Highlight these Headings properly. Clearly distinguish between heading and its content
     #Topic  (content should not be bold)
     # Keywords (3-5 Keywords only)
-    #Summary (in points)
+    #Summary (in points)    
+    #Formulas (Only if there is any mathematical expression highlight them in a box in newlines. If no mathematical formualas skip this)
     #Additional Points (3-5 points)
     #Key Takeaways (3-5 points)
     """
