@@ -6,7 +6,7 @@ pip install python-dotenv
 from dotenv import load_dotenv
 import os
 
-load_dotenv("/content/API.env")
+load_dotenv(r"C:\Users\prann\OneDrive\เอกสาร\Projects\Essentials\API_KEYS\GROQ_API.env")
 
 api_key = os.getenv("GROQ_API_KEY")
 
@@ -32,16 +32,11 @@ prompt = PromptTemplate(
     """
 )
 
-from langchain.chains import LLMChain
-
-chain = LLMChain(
-    llm = llm,
-    prompt = prompt
-)
+chain = prompt | llm
 
 def generate_output(text, no_of_words=None, style=None):
   response = chain.invoke({"text": text, "no_of_words": no_of_words, "style": style})
-  return response["text"]
+  return response.content
 
 def main():
 
@@ -50,3 +45,6 @@ def main():
   style = input("Enter the style of the summary (optional): ")
 
   response = generate_output(text, no_of_words, style)
+  print(response)
+
+main()
