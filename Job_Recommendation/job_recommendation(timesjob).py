@@ -48,6 +48,11 @@ hyperlinks = soup.find_all("a", class_ = "posoverlay_srp")
 for hyperlink in hyperlinks[:5]:
     hyperlinks_list.append(hyperlink["href"])
 
-job_recommendations_dataframe = pd.DataFrame({"Job Titles": job_titles_list, "Company Names": company_names_list, "HyperLinks": hyperlinks_list})
+print(hyperlinks_list)
 
-print(job_recommendations_dataframe)
+'''skills_req_list = []
+skills_req = soup.find_all("")
+'''
+'''job_recommendations_dataframe = pd.DataFrame({"Job Titles": job_titles_list, "Company Names": company_names_list, "HyperLinks": hyperlinks_list})
+
+print(job_recommendations_dataframe)'''
