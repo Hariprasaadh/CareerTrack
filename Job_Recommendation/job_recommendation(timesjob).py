@@ -53,6 +53,7 @@ print(hyperlinks_list)
 '''skills_req_list = []
 skills_req = soup.find_all("")
 '''
-'''job_recommendations_dataframe = pd.DataFrame({"Job Titles": job_titles_list, "Company Names": company_names_list, "HyperLinks": hyperlinks_list})
 
-print(job_recommendations_dataframe)'''
+job_recommendations_dataframe = pd.DataFrame({"Job Titles": job_titles_list, "Company Names": company_names_list, "HyperLinks": hyperlinks_list})
+
+print(job_recommendations_dataframe)

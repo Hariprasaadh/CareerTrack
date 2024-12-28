@@ -19,8 +19,12 @@ elif len(course_split) == 3:
     url = f"https://www.coursera.org/search?query={course_split[0]}%20{course_split[1]}%20{course_split[2]}"
 elif len(course_split) == 4:
     url = f"https://www.coursera.org/search?query={course_split[0]}%20{course_split[1]}%20{course_split[2]}%20{course_split[3]}"
-else:
+elif len(course_split) == 5:
     url = f"https://www.coursera.org/search?query={course_split[0]}%20{course_split[1]}%20{course_split[2]}%20{course_split[3]}%20{course_split[4]}"
+elif len(course_split) == 6:
+    url = f"https://www.coursera.org/search?query={course_split[0]}%20{course_split[1]}%20{course_split[2]}%20{course_split[3]}%20{course_split[4]}%20{course_split[5]}"
+else:
+    url = f"https://www.coursera.org/search?query={course_split[0]}%20{course_split[1]}%20{course_split[2]}%20{course_split[3]}%20{course_split[4]}%20{course_split[5]}%20{course_split[6]}"
 
 response = requests.get(url)
 soup = BeautifulSoup(response.text, "lxml")
