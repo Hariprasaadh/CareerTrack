@@ -1,0 +1,6 @@
+streamlit
+os
+plotly
+dotenv
+langchain_core
+langchain_groq
