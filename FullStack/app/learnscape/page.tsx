@@ -68,7 +68,7 @@ const RecentProjects: React.FC = () => {
       <h1 className="heading">
         A small selection of <span className="text-purple">Our Programmes</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-40 mt-10">
         {projects_1.map((item) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
