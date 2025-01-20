@@ -98,7 +98,7 @@ export const projects_1 = [
     des: "Find your equilibrium with our tools for mental well-being and a healthy lifestyle.",
     img: "/yt.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://youscribe.streamlit.app/",
+    link: "https://mindtube.streamlit.app/",
   },
   {
     id: 4,
