@@ -1,0 +1,7 @@
+streamlit
+youtube-transcript-api
+langchain-groq
+langchain-core
+google-generativeai
+pandas
+plotly
