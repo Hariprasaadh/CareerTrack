@@ -63,7 +63,7 @@ export const projects = [
     des: "Find your equilibrium with our tools for mental well-being and a healthy lifestyle.",
     img: "/pr3.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/nutrition-dashboard",
+    link: "/balancebeam",
   },
   {
     id: 4,
@@ -196,7 +196,7 @@ export const projects_4 = [
     id: 2,
     title: "Mind Tracker",
     des: "Mental Health Assesment Tool",
-    img: "/cc.jpg",
+    img: "/md.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "/md.jpg",
   },
