@@ -130,11 +130,11 @@ export const projects_2 = [
   },
   {
     id: 3,
-    title: "Tic-Tak-Toe",
+    title: "Tic-Tac-Toe",
     des: "Find your equilibrium with our tools for mental well-being and a healthy lifestyle.",
     img: "/x.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "Classic strategic three-in-a-row challenge.",
+    link: "https://careertrack-tic-tac-toe-p8e8.vercel.app/",
   },
   {
     id: 4,
