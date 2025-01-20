@@ -3,8 +3,5 @@ langchain
 langchain_groq
 pandas
 plotly
-re
-json
-datetime
-streamlit
-typing
+python-dateutil
+
