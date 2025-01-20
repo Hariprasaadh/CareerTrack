@@ -1,0 +1,8 @@
+python-dotenv
+streamlit
+langchain-groq
+PyPDF2
+beautifulsoup4
+requests
+langchain-core
+langchain-community
