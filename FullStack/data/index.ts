@@ -203,7 +203,7 @@ export const projects_4 = [
   {
     id: 3,
     title: "Nutrition Dashboard",
-    des: "Find your equilibrium with our tools for mental well-being and a healthy lifestyle.",
+    des: "A dashboard that tracks and analyzes your dietary intake for a healthier lifestyle.",
     img: "/nd.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "/nutrition-dashboard",
