@@ -154,7 +154,7 @@ export const projects_3 = [
     des: "Navigate twists to find escape path.",
     img: "/run.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/resume.jpg",
+    link: "https://resumeace.streamlit.app/",
   },
   {
     id: 2,
