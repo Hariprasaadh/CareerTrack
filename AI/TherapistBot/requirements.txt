@@ -6,4 +6,5 @@ plotly
 re
 json
 datetime
+streamlit
 typing
