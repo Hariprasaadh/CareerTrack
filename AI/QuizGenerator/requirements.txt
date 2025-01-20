@@ -1,5 +1,0 @@
-streamlit
-plotly
-python-dotenv
-langchain
-langchain_groq
