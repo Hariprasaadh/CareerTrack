@@ -154,7 +154,7 @@ export const projects_3 = [
     des: "Navigate twists to find escape path.",
     img: "/run.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://resumeace.streamlit.app/",
+    link: "/resume.jpg",
   },
   {
     id: 2,
@@ -170,7 +170,7 @@ export const projects_3 = [
     des: "Find your equilibrium with our tools for mental well-being and a healthy lifestyle.",
     img: "/x.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "Classic strategic three-in-a-row challenge.",
+    link: "https://careertrack-tic-tac-toe-p8e8.vercel.app/",
   },
   {
     id: 4,
@@ -198,13 +198,13 @@ export const projects_4 = [
     des: "Mental Health Assesment Tool",
     img: "/cc.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://mindtracker.streamlit.app/",
+    link: "/md.jpg",
   },
   {
     id: 3,
     title: "Nutrition Dashboard",
     des: "Find your equilibrium with our tools for mental well-being and a healthy lifestyle.",
-    img: "/launchpad",
+    img: "/nd.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "Classic strategic three-in-a-row challenge.",
   },
