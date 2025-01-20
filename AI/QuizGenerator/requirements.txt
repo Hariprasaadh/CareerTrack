@@ -1,6 +1,5 @@
 streamlit
-os
 plotly
-dotenv
-langchain_core
+python-dotenv
+langchain
 langchain_groq
