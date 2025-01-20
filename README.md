@@ -6,13 +6,14 @@
 
 ## Workflow Diagram
 
-![Workflow Diagram](path/to/your/workflow-diagram.png)
+
+![Workflow](Readme-Images/CAREERTRACK%20WORKFLOW.png)
 
 ---
 
 ## Concept Map
 
-![Concept Map](path/to/your/concept-map.png)
+![Concept Map](Readme-Images/CONCEPT%20MAP.png)
 
 ---
 
