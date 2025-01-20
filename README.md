@@ -1,4 +1,5 @@
-# CareerTrack: A One-Stop Solution for College Computer Science Students
+# CareerTrack: Empowering Students to Learn, Thrive, and Build a Sustainable Future 🤖
+
 
 **CareerTrack** is an integrated platform designed to support college students pursuing computer science by offering a wide range of resources for academic growth, career development, mental well-being, and leisure activities. This project aims to enhance students' academic performance, career prospects, and mental health, ensuring a balanced and successful college life.
 
@@ -20,23 +21,24 @@
 ## Tech Stack
 
 - **Frontend:**  
-  - React.js (for dynamic UI)
-  - React Native (for mobile app development)
-  - HTML, CSS (for structure and styling)
-  - Redux (for state management)
+  - Next.js (for dynamic UI)
+  - React JS (for game development)
+  - Tailwind CSS & Accertinity UI (for webpage styling)
+  - Particle JS & Three JS (for web graphics)
   
 - **Backend:**  
   - Node.js (for backend services)
   - Express.js (for handling API requests)
   - MongoDB (for storing user data, preferences, etc.)
   
-- **AI & Machine Learning:**  
-  - LangChain (for resume analysis and career roadmap)
-  - YOLOv8 (for disease and weed detection in farming tech)
-  - GPT-3 / LLaMA (for chatbots and YouTube video summarization)
+- **Gen AI & Machine Learning:**  
+  - LangChain (enables interactive applications through real-time communication with language models)
+  - LangGraph (orchestration framework for controllable agentic workflows)
+  - PhiData (used to build, ship and monitor agentic systems)
+  - Hugging Face Transformers (Supports fine-tuning and customization of generative text models)
   
 - **Cloud:**  
-  - GroqCloud (for processing and model inference)
+  - GroqCloud (Utilized for large-scale model inference and powering)
 
 ---
 
