@@ -188,7 +188,7 @@ export const projects_4 = [
     id: 1,
     title: "Aria ",
     des: "AI Therapy Assistant",
-    img: "/run.jpg",
+    img: "/aria.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://ariahealthbot.streamlit.app/",
   },
