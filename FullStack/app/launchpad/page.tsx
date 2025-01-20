@@ -6,7 +6,7 @@ import { TextGenerateEffect } from "../../components/ui/TextGenerateEffect";
 import { Spotlight } from "../../components/ui/Spotlight";
 
 import { PinContainer } from "@/components/ui/Pin";
-import { projects } from "@/data";
+import { projects_3 } from "@/data";
 import StarBackground from "@/components/StarBackground";
 
 const Hero: React.FC = () => {
@@ -69,7 +69,7 @@ const RecentProjects: React.FC = () => {
         A small selection of <span className="text-purple">Our Programmes</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map((item) => (
+        {projects_3.map((item) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}

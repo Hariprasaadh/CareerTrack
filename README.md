@@ -22,13 +22,13 @@ CareerTrack is more than a student support platform—it is a catalyst for susta
 ## Workflow Diagram
 
 
-![Workflow](Readme-Images/CAREERTRACK%20WORKFLOW.png)
+![Workflow](Readme-Images/CareerTrack-Workflow.jpg)
 
 ---
 
 ## Concept Map
 
-![Concept Map](Readme-Images/CONCEPT%20MAP.png)
+![Concept Map](Readme-Images/CONCEPT-MAP.png)
 
 ---
 
@@ -61,9 +61,13 @@ CareerTrack is more than a student support platform—it is a catalyst for susta
 The **CareerTrack** project offers a comprehensive and integrated system that addresses multiple facets of a student's life:
 
 - **Holistic Integration of Resources:** CareerTrack combines academic learning, career preparation, mental well-being, and leisure activities into a single cohesive platform. This comprehensive approach eliminates the need for students to juggle multiple tools, saving time and effort while addressing the interconnected aspects of their academic and personal lives.
+  
 - **Alignment with Sustainable Development Goals (SDGs):** By aligning with the United Nations' Sustainable Development Goals, particularly those focused on quality education, mental well-being, and decent work, CareerTrack ensures its impact goes beyond individual users to support broader societal progress. This alignment makes CareerTrack purpose-driven, linking individual growth to sustainable global development.
+  
 - **AI-Powered Personalization:** CareerTrack leverages cutting-edge AI and machine learning technologies to deliver highly personalized experiences. From tailored course and career recommendations to job opportunities and mental health support, the platform adapts to each student's unique goals and challenges, providing a truly customized journey.
+  
 - **Gamified Relaxation for Mental Balance:** CareerTrack recognizes the importance of downtime and creative exploration in a student’s life. By offering features like interactive games and curated music playlists, the platform ensures students can recharge effectively while fostering their problem-solving skills and creativity through enjoyable, stress-relieving activities.
+  
 - **Tools for Research and Technical Learning:** CareerTrack empowers students with innovative tools such as GitHub repository learning aids, YouTube summarizers with mind maps, and a research bot that simplifies academic research. These features provide a hands-on approach to technical learning and research, making complex tasks more accessible and engaging for students.
 
 ---
@@ -102,7 +106,7 @@ To get started with **CareerTrack**, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/CareerTrack.git
+   git clone https://github.com/Hariprasaadh/NoBrainer-10-SUSTAIN-AI-THON.git
 
 2. Install the dependencies for frontend and backend:
 ```bash
