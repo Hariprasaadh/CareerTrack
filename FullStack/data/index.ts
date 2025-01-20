@@ -198,7 +198,7 @@ export const projects_4 = [
     des: "Mental Health Assesment Tool",
     img: "/md.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/https://mindtracker.streamlit.app/",
+    link: "https://mindtracker.streamlit.app/",
   },
   {
     id: 3,
