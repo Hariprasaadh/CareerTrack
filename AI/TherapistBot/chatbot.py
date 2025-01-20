@@ -15,7 +15,7 @@ from collections import defaultdict
 
 
 class TherapyBot:
-    def _init_(self, api_key: str):
+    def __init__(self, api_key: str):
         self.llm = ChatGroq(
             model="llama-3.1-70b-versatile",
             temperature=0.5,
@@ -486,5 +486,5 @@ def main():
         st.markdown('</div>', unsafe_allow_html=True)
 
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     main()
