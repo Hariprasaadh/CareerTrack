@@ -1,0 +1,9 @@
+streamlit
+langchain
+langchain_groq
+pandas
+plotly
+re
+json
+datetime
+typing
