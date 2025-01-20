@@ -5,4 +5,5 @@ scikit-learn
 tensorflow
 langchain
 regex
+langchain_groq
 graphviz
