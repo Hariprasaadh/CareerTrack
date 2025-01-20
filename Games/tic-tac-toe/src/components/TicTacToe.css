@@ -1,0 +1,183 @@
+/* TicTacToe.css */
+.game-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .game-title {
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .mode-selection {
+    text-align: center;
+  }
+  
+  .mode-selection h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+  
+  .mode-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .mode-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .mode-button.computer {
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    color: white;
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
+  }
+  
+  .mode-button.friend {
+    background: linear-gradient(45deg, #2196F3, #1976D2);
+    color: white;
+    box-shadow: 0 0 15px rgba(33, 150, 243, 0.5);
+  }
+  
+  .mode-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  }
+  
+  .game-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .status-bar {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .game-mode {
+    font-size: 1.2rem;
+    color: #8e9eab;
+    margin-bottom: 10px;
+  }
+  
+  .game-status {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cell:hover:not(.filled) {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  }
+  
+  .cell.filled.x {
+    color: #ff4757;
+    text-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
+  }
+  
+  .cell.filled.o {
+    color: #2ed573;
+    text-shadow: 0 0 10px rgba(46, 213, 115, 0.5);
+  }
+  
+  .control-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .control-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .control-button.reset {
+    background: linear-gradient(45deg, #FF6B6B, #EE5253);
+    color: white;
+    box-shadow: 0 0 15px rgba(238, 82, 83, 0.5);
+  }
+  
+  .control-button.change-mode {
+    background: linear-gradient(45deg, #5352ed, #3742fa);
+    color: white;
+    box-shadow: 0 0 15px rgba(83, 82, 237, 0.5);
+  }
+  
+  .control-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  
+  @media (max-width: 500px) {
+    .cell {
+      width: 80px;
+      height: 80px;
+      font-size: 2rem;
+    }
+  
+    .game-title {
+      font-size: 2.5rem;
+    }
+  
+    .mode-buttons {
+      flex-direction: column;
+    }
+  }

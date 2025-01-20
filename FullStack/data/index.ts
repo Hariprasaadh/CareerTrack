@@ -63,7 +63,7 @@ export const projects = [
     des: "Find your equilibrium with our tools for mental well-being and a healthy lifestyle.",
     img: "/pr3.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/nutrition-dashboard",
+    link: "/balancebeam",
   },
   {
     id: 4,
@@ -82,7 +82,7 @@ export const projects_1 = [
     des: "Your personalized learning landscape, tailored to all your academic needs.",
     img: "/quiz.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://smartquiz.streamlit.app/",
+    link: "https://aiquest.streamlit.app/",
   },
   {
     id: 2,
@@ -90,7 +90,7 @@ export const projects_1 = [
     des: "From job search to placement, your career journey starts here.",
     img: "/rb.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://researchmine.streamlit.app/",
+    link: "https://researchrealm.streamlit.app/",
   },
   {
     id: 3,
@@ -102,9 +102,9 @@ export const projects_1 = [
   },
   {
     id: 4,
-    title: "Rewind",
-    des: "Your escape from the academic grind – relax, play, and refresh",
-    img: "/pr4.jpg",
+    title: "Repo Bot",
+    des: "Connect with your GitHub repository effortlessly—chat, explore, and manage with RepBot!",
+    img: "/cb.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/rewind",
   },
@@ -140,7 +140,79 @@ export const projects_2 = [
     id: 4,
     title: "2048",
     des: "Addictive number-merging strategic puzzle game.",
-    img: "/pr4.jpg",
+    img: "/tf.jpg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://careertrack-2048-games-iwgv.vercel.app/",
+  },
+];
+
+
+export const projects_3 = [
+  {
+    id: 1,
+    title: "Resume Tracker",
+    des: "Navigate twists to find escape path.",
+    img: "/run.jpg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "/resume.jpg",
+  },
+  {
+    id: 2,
+    title: "Candy Crush",
+    des: "Colorful match-three candy-crushing fun.",
+    img: "/cc.jpg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    link: "https://careertrack-candy-crush-sigma.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Tic-Tak-Toe",
+    des: "Find your equilibrium with our tools for mental well-being and a healthy lifestyle.",
+    img: "/x.jpg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "https://careertrack-tic-tac-toe-p8e8.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "2048",
+    des: "Addictive number-merging strategic puzzle game.",
+    img: "/tf.jpg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://careertrack-2048-games-iwgv.vercel.app/",
+  },
+];
+
+
+export const projects_4 = [
+  {
+    id: 1,
+    title: "Aria ",
+    des: "AI Therapy Assistant",
+    img: "/run.jpg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://ariahealthbot.streamlit.app/",
+  },
+  {
+    id: 2,
+    title: "Mind Tracker",
+    des: "Mental Health Assesment Tool",
+    img: "/md.jpg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    link: "/md.jpg",
+  },
+  {
+    id: 3,
+    title: "Nutrition Dashboard",
+    des: "Find your equilibrium with our tools for mental well-being and a healthy lifestyle.",
+    img: "/nd.jpg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "Classic strategic three-in-a-row challenge.",
+  },
+  {
+    id: 4,
+    title: "2048",
+    des: "Addictive number-merging strategic puzzle game.",
+    img: "/tf.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://careertrack-2048-games-iwgv.vercel.app/",
   },

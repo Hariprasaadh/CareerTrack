@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --primary-gradient: linear-gradient(135deg, #1a1a2e, #16213e);
+    --secondary-gradient: linear-gradient(135deg, #16213e, #0f3460);
+    --accent-color: #4ce351;
+    --text-color: #ca3c3c;
+    --border-color: #cbdbec;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--primary-gradient);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+#view {
+    margin-top: 30px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#mazeContainer {
+    top: 15px;
+    opacity: 0;
+    display: inline-block;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(136, 193, 141, 0.3);
+    animation: containerAppear 0.8s ease-out forwards;
+    background: var(--secondary-gradient);
+    padding: 10px;
+}
+
+@keyframes containerAppear {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+#mazeContainer #mazeCanvas {
+    margin: 0;
+    display: block;
+    border: solid 2px var(--border-color);
+    border-radius: 10px;
+    height: 400px;
+    background: #fafdfc10;
+    transition: all 0.3s ease;
+}
+
+#mazeContainer #mazeCanvas:hover {
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+}
+
+input, select {
+    cursor: pointer;
+    background: linear-gradient(135deg, #1a1a2e80, #16213e80);
+    height: 45px;
+    width: 150px;
+    padding: 10px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-color);
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    appearance: none;
+    transition: all 0.3s ease;
+    margin: 0 5px;
+}
+
+input:hover, select:hover {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+input:active, select:active {
+    transform: translateY(1px);
+}
+
+.custom-select {
+    display: inline-block;
+    position: relative;
+}
+
+.custom-select::after {
+    content: '▼';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-color);
+    pointer-events: none;
+    font-size: 12px;
+}
+
+#Message-Container {
+    visibility: hidden;
+    color: var(--text-color);
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+#Message-Container #message {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    background: var(--secondary-gradient);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: messageAppear 0.5s ease-out;
+}
+
+@keyframes messageAppear {
+    from { opacity: 0; transform: translate(-50%, -40%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+#page {
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+#page #menu {
+    margin: auto;
+    padding: 20px;
+    height: 65px;
+    box-sizing: border-box;
+}
+
+#page #menu h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 3.2rem;
+    background: linear-gradient(45deg, #4CAF50, #81c784);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: titleAppear 1s ease-out;
+}
+
+@keyframes titleAppear {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#instructions {
+    margin-top: 425px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    animation: instructionsAppear 1s ease-out 0.5s backwards;
+}
+
+@keyframes instructionsAppear {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.border {
+    border: 3px solid var(--border-color);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.border:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Difficulty buttons styling */
+select option {
+    background: #16213e;
+    color: var(--text-color);
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    input, select {
+        width: 120px;
+        margin: 5px;
+    }
+    
+    #page #menu h1 {
+        font-size: 2.5rem;
+    }
+    
+    #mazeContainer {
+        padding: 5px;
+    }
+    
+    #instructions {
+        margin-top: 400px;
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+}
+
+/* Add smooth transitions for all interactive elements */
+* {
+    transition: all 0.3s ease;
+}
