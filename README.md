@@ -110,6 +110,7 @@ To get started with **CareerTrack**, follow these steps:
 
 2. Install the dependencies for frontend and backend:
 ```bash
+cd NoBrainer-10-SUSTAIN-AI-THON
 cd FullStack
 npm install
 npm run dev
