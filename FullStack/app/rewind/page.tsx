@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
           </p>
 
           <TextGenerateEffect
-            words="Your escape from the academic grind – relax, play, and refresh"
+            words="Your escape from the academic grind - relax, play, and refresh"
             className="text-center text-[25px]"
           />
         </div>

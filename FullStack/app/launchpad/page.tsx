@@ -11,7 +11,7 @@ import StarBackground from "@/components/StarBackground";
 
 const Hero: React.FC = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className=" pt-36">
       {/** Spotlights */}
       <div>
         <Spotlight
@@ -39,23 +39,14 @@ const Hero: React.FC = () => {
       <div className="flex justify-center relative my-20 z-10">
         <StarBackground />
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-2xl text-center text-blue-100 max-w-80">
-            LaunchPad
-          </p>
-
-          {/** Text Generate Effect */}
-          <TextGenerateEffect
-            words="From job search to placement, your career journey starts here."
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-          />
-
-          <a href="/">
-            <MagicButton
-              title="Home"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+                          <p className="uppercase tracking-widest text-6xl text-center text-blue-100 max-w-80">
+                            Launchpad
+                          </p>
+                
+                          <TextGenerateEffect
+                            words="From job search to placement, your career journey starts here."
+                            className="text-center text-[25px]"
+                          />
         </div>
       </div>
     </div>

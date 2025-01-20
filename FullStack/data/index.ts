@@ -198,7 +198,7 @@ export const projects_4 = [
     des: "Mental Health Assesment Tool",
     img: "/md.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/md.jpg",
+    link: "/https://mindtracker.streamlit.app/",
   },
   {
     id: 3,
@@ -206,16 +206,9 @@ export const projects_4 = [
     des: "Find your equilibrium with our tools for mental well-being and a healthy lifestyle.",
     img: "/nd.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "Classic strategic three-in-a-row challenge.",
+    link: "/nutrition-dashboard",
   },
-  {
-    id: 4,
-    title: "2048",
-    des: "Addictive number-merging strategic puzzle game.",
-    img: "/tf.jpg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://careertrack-2048-games-iwgv.vercel.app/",
-  },
+  
 ];
 
 export const testimonials = [

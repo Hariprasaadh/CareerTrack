@@ -39,25 +39,15 @@ const Hero: React.FC = () => {
       <div className="flex justify-center relative my-20 z-10">
         <StarBackground />
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-3xl text-center text-blue-100 max-w-80">
-            Balance Beam
-          </p>
-
-          {/** Text Generate Effect */}
-          <TextGenerateEffect
-            words="Find your equilibrium with our tools for mental well-being and a healthy lifestyle."
-            className="text-center text-[10px] md:text-5xl lg:text-6xl"
-          />
-
-          <a href="/">
-            <MagicButton
-              title="Home"
-              icon={<FaLocationArrow />}
-              position="right"
-              
-            />
-          </a>
-        </div>
+                                  <p className="uppercase tracking-widest text-6xl text-center text-blue-100 max-w-80">
+                                    Balancebeam
+                                  </p>
+                        
+                                  <TextGenerateEffect
+                                    words="Find your equilibrium with our tools for mental well-being and a healthy lifestyle"
+                                    className="text-center text-[25px]"
+                                  />
+                </div>
       </div>
     </div>
   );
@@ -65,11 +55,11 @@ const Hero: React.FC = () => {
 
 const RecentProjects: React.FC = () => {
   return (
-    <div className="py-20">
+    <div className="py-5">
       <h1 className="heading">
         A small selection of <span className="text-purple">Our Programmes</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-16 ">
         {projects_4.map((item) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
