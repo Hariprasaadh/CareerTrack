@@ -1,0 +1,5 @@
+streamlit
+plotly
+pandas
+langchain_groq
+langchain
