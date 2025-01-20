@@ -24,23 +24,21 @@ st.markdown("""
     /* Main container styling */
     .main {
         font-family: 'Poppins', sans-serif;
+        font-weight: bold;
         animation: fadeIn 0.5s ease-in;
     }
 
-    /* Glowing title effect */
     .title {
         text-align: center;
         color: purple;
-        text-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
-        animation: glow 2s ease-in-out infinite alternate;
+        font-weight: bold;
+
     }
 
-    /* Radio button styling */
     .stRadio > label {
-        background: linear-gradient(145deg, #f0f0f0, #ffffff);
+        background: #f0f0f0;
         padding: 10px 15px;
         border-radius: 10px;
-        box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
         transition: all 0.3s ease;
         color:purple;
     }
@@ -51,7 +49,6 @@ st.markdown("""
         color:blue;
     }
 
-    /* Button styling */
     .stButton>button {
         width: 100%;
         background: linear-gradient(45deg, #4CAF50, #45a049);
@@ -66,10 +63,10 @@ st.markdown("""
         animation: pulse 2s infinite;
     }
 
-    .stButton>button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
-    }
+    # .stButton>button:hover {
+    #     transform: translateY(-2px);
+    #     box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+    # }
 
     /* Card styling */
     .css-1r6slb0 {
@@ -80,22 +77,7 @@ st.markdown("""
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     }
 
-    /* Animations */
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes glow {
-        from { text-shadow: 0 0 10px rgba(76, 175, 80, 0.5); }
-        to { text-shadow: 0 0 20px rgba(76, 175, 80, 0.8); }
-    }
-
-    @keyframes pulse {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.02); }
-        100% { transform: scale(1); }
-    }
+    
 
     /* Progress bar styling */
     .stProgress > div > div > div > div {
@@ -108,7 +90,7 @@ st.markdown("""
 def initialize_llm():
     """Initialize the Groq LLM"""
     return ChatGroq(
-        model="llama-3.1-70b-versatile",
+        model="llama-3.3-70b-versatile",
         temperature=0,
         groq_api_key="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"
     )
