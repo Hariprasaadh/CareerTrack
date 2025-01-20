@@ -28,10 +28,9 @@ prompt = PromptTemplate.from_template(
     ##Highlight these Headings properly. Clearly distinguish between heading and its content
     #Topic  (content should not be bold)
     # Keywords (3-5 Keywords only)
-    #Summary (in points)    
-    #Formulas (Only if there is any mathematical expression highlight them in a box in newlines. If no mathematical formualas skip this)
-    #Additional Points (3-5 points)
+    #Summary (in points)  (30% of video content)  
     #Key Takeaways (3-5 points)
+    ##Next Steps
     """
 )
 
@@ -57,14 +56,15 @@ def summarise(transcript, prompt):
 
 # Streamlit UI
 st.set_page_config(page_title="YouTube Transcript to Detailed Notes", layout="wide")
-st.title("📹 YouTube Transcript to Detailed Notes Converter")
+st.title("📹 YouTube in a Nutshell: Quick Summaries Made Easy!")
 
 # Sidebar with instructions
-st.sidebar.header("Instructions")
+st.sidebar.header("📋 **Instructions**")
 st.sidebar.markdown("""
-1. **Enter a YouTube Video URL** in the text box below.
-2. **Press 'Get Detailed Notes'** to extract and summarize the technical content.
-3. **View the summary** with key takeaways and technical insights.
+1. 🌐 **Enter a YouTube Video URL** in the text box below to start.
+2. 📑 **Press 'Get Detailed Notes'** to extract and summarize the technical content.
+3. 💡 **View the summary** with key takeaways, technical insights, and more.
+4. 🔍 **Refine** your learning and enhance your understanding!
 """)
 
 # Input for YouTube video link
@@ -72,8 +72,7 @@ youtube_link = st.text_input("Enter YouTube Video Link:")
 
 if youtube_link:
     video_id = youtube_link.split("v=")[1].split("&")[0]
-    st.image(f"http://img.youtube.com/vi/{video_id}/0.jpg", use_container_width=True)
-
+    st.image(f"http://img.youtube.com/vi/{video_id}/0.jpg", use_container_width=False, width=500)
 # Button to trigger the detailed notes extraction
 if st.button("Get Detailed Notes"):
     with st.spinner("Extracting and summarizing transcript..."):
@@ -89,30 +88,46 @@ if st.button("Get Detailed Notes"):
         except Exception as e:
             st.error(f"Error: {str(e)}")
 
-# Add some styling
+# Add some styling after the process
 st.markdown("""
-<style>
-    .css-ffhzg2 {
-        background-color: #f7f7f7;
-    }
-    .css-1v3fvcr {
-        padding: 2rem;
-    }
-    .stButton>button {
-        background-color: #00A300;
-        color: white;
-        font-size: 18px;
-        padding: 12px 24px;
-        border-radius: 10px;
-        border: none;
-    }
-    .stButton>button:hover {
-        background-color: #007500;
-    }
-    .stTextInput>div>div>input {
-        font-size: 16px;
-        padding: 12px;
-        border-radius: 8px;
-    }
-</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        .stApp {
+            background: linear-gradient(120deg, #4e21cc 25%, #367b9c 50%, #8231d4 75%);
+            background-size: 200% 100%;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        div.stButton > button {
+            background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff5964);
+            border: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        div.stButton > button:hover {
+            transform: scale(1.1);
+            color:white;
+            background: linear-gradient(90deg, #ff5964, #ff758c, #ff7eb3);
+            box-shadow: 0px 5px 15px rgba(255, 89, 100, 0.5);
+        }
+
+        .stSidebar {
+            background-color: #003300;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            width: 250px;
+            height: 200px;
+        }
+
+        .stSidebar .stMarkdown {
+            font-size: 12px;
+            color: #fff;
+        }
+
+    </style>
 """, unsafe_allow_html=True)
