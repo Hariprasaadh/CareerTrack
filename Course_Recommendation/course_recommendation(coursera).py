@@ -34,7 +34,7 @@ course_titles_list = [title.text for title in soup.find_all("h3", class_="cds-Co
 skills_list = [skill.text for skill in soup.find_all("div", class_="cds-CommonCard-bodyContent")[:5]]
 ratings = soup.find_all("div", class_ = "cds-RatingStat-meter")
 ratings_list = [rate.text.split("Rating")[0].strip() for rate in ratings[:5]]
-hyperlinks_list = ["https://www.coursera.org/" + hyperlink["href"] for hyperlink in soup.find_all("a", class_="cds-119 cds-113 cds-115 cds-CommonCard-titleLink css-si869u cds-142")[:5]]
+hyperlinks_list = ["https://www.coursera.org" + hyperlink["href"] for hyperlink in soup.find_all("a", class_="cds-119 cds-113 cds-115 cds-CommonCard-titleLink css-vflzcf cds-142")[:5]]
 levels_list = [level.text.split()[0] for level in soup.find_all("div", class_="cds-CommonCard-metadata")[:5]]
 
 course_data = pd.DataFrame({
@@ -47,3 +47,14 @@ course_data = pd.DataFrame({
 })
 
 print(course_data)
+
+
+images_list = []
+images = soup.find_all("div", class_ = "cds-ProductCard-listPreviewImage")
+for image in images:
+    images_list.append(image)
+
+print(images_list)
+
+
+
