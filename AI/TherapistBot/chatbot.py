@@ -381,7 +381,7 @@ def main():
         # Initialize session state
         if 'messages' not in st.session_state:
             st.session_state.messages = []
-            st.session_state.bot = TherapyBot("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")
+            st.session_state.bot = TherapyBot("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")
             st.session_state.messages.append({
                 "role": "assistant",
                 "content": "Hello! I'm Aria, and I'm here to listen and support you. How are you feeling today?"
