@@ -8,12 +8,11 @@ from langchain_groq import ChatGroq
 from langchain_core.output_parsers import JsonOutputParser
 
 load_dotenv()
-GROQ_API_KEY = os.getenv("GROQCLOUD_API")
 
 llm = ChatGroq(
     model_name="llama-3.3-70b-versatile",
     temperature=0.5,
-    groq_api_key=GROQ_API_KEY
+    groq_api_key="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"
 )
 
 
