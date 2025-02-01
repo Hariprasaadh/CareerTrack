@@ -15,11 +15,11 @@ from collections import defaultdict
 
 
 class TherapyBot:
-    def __init__(self, api_key: str):
+    def __init__(self):
         self.llm = ChatGroq(
-            model="llama-3.1-70b-versatile",
+            model="llama-3.3-70b-versatile",
             temperature=0.5,
-            groq_api_key=api_key
+            groq_api_key="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"
         )
 
         self.memory = ConversationBufferMemory(
@@ -381,7 +381,7 @@ def main():
         # Initialize session state
         if 'messages' not in st.session_state:
             st.session_state.messages = []
-            st.session_state.bot = TherapyBot("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")
+            st.session_state.bot = TherapyBot()
             st.session_state.messages.append({
                 "role": "assistant",
                 "content": "Hello! I'm Aria, and I'm here to listen and support you. How are you feeling today?"
