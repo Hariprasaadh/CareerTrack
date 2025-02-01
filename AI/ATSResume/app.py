@@ -87,7 +87,7 @@ def scrape_website(job_link):
     llm_scrape = ChatGroq(
         model_name="llama-3.3-70b-versatile",
         temperature=0.5,
-        groq_api_key=os.getenv("GROQ_API_KEY1")
+        groq_api_key="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"
     )
 
     loader = WebBaseLoader(job_link)
@@ -119,7 +119,7 @@ def generate_mail(resume_content, job_content):
     llm_mail = ChatGroq(
         model_name="llama-3.3-70b-versatile",
         temperature=0.5,
-        groq_api_key=os.getenv("GROQ_API_KEY2")
+        groq_api_key="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"
     )
 
     prompt_mail = PromptTemplate.from_template(
