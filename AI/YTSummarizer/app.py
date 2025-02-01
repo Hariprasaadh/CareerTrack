@@ -13,8 +13,8 @@ import os
 
 load_dotenv()
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-GOOGLE_API_KEY = os.getenv("GEMINI_API_KEY")
+GROQ_API_KEY = "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"
+GOOGLE_API_KEY = "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"
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
