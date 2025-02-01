@@ -92,7 +92,7 @@ def initialize_llm():
     return ChatGroq(
         model="llama-3.3-70b-versatile",
         temperature=0,
-        groq_api_key="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"
+        groq_api_key="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"
     )
 
 
