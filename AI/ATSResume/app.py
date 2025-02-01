@@ -13,7 +13,7 @@ def get_response(resume_content, job_content):
     llm = ChatGroq(
         model_name="llama-3.3-70b-versatile",
         temperature=0.5,
-        groq_api_key=os.getenv("GROQCLOUD_API")
+        groq_api_key="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"
     )
     prompt_extract = PromptTemplate.from_template(
         """
