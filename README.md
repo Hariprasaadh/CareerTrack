@@ -105,8 +105,8 @@ CareerTrack is designed to address the multifaceted needs of modern college stud
 To get started with **CareerTrack**, follow these steps:
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/Hariprasaadh/NoBrainer-10-SUSTAIN-AI-THON.git
+  
+   git clone https://github.com/Hariprasaadh/CareerTrack.git
 
 2. Install the dependencies for frontend and backend:
 ```bash
