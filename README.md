@@ -105,9 +105,9 @@ CareerTrack is designed to address the multifaceted needs of modern college stud
 To get started with **CareerTrack**, follow these steps:
 
 1. Clone the repository:
-  '''bash
+  ```bash
    git clone https://github.com/Hariprasaadh/CareerTrack.git
-   '''
+   ```
 
 3. Install the dependencies for frontend and backend:
 ```bash
