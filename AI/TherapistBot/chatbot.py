@@ -12,6 +12,8 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from collections import defaultdict
+GROQ_API_KEY=st.secrets['GROQ_API_KEY']
+
 
 
 class TherapyBot:
@@ -19,7 +21,7 @@ class TherapyBot:
         self.llm = ChatGroq(
             model="llama-3.3-70b-versatile",
             temperature=0.5,
-            groq_api_key="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"
+            groq_api_key=GROQ_API_KEY
         )
 
         self.memory = ConversationBufferMemory(
