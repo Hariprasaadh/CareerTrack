@@ -12,6 +12,8 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 import regex as re
 import graphviz
+GROQ_API_KEY=st.secrets['GROQ_API_KEY']
+
 
 st.set_page_config(page_title="Career Guidance System", layout="wide")
 
@@ -229,7 +231,7 @@ if st.button("Predict Career"):
         llm = ChatGroq(
             model="llama-3.1-70b-versatile",
             temperature=0,
-            groq_api_key="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"
+            groq_api_key=GROQ_API_KEY
         )
         prompt = PromptTemplate(
             input_variables=["predicted_career"],
