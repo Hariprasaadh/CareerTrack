@@ -229,7 +229,7 @@ if st.button("Predict Career"):
         predicted_class_index = np.random.randint(0, len(career_classes))
         st.session_state.predicted_career = career_classes[predicted_class_index]
         llm = ChatGroq(
-            model="llama-3.1-70b-versatile",
+            model="llama-3.3-70b-versatile",
             temperature=0,
             groq_api_key=GROQ_API_KEY
         )
