@@ -5,6 +5,10 @@ import os
 import PyPDF2 as pdf
 from langchain_core.prompts import PromptTemplate
 from langchain_community.document_loaders import WebBaseLoader
+GROQ_API_KEY1=st.secrets['GROQ_API_KEY1']
+GROQ_API_KEY2=st.secrets['GROQ_API_KEY2']
+GROQ_API_KEY3=st.secrets['GROQ_API_KEY3']
+
 
 load_dotenv()
 
