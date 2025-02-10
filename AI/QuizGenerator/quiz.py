@@ -6,13 +6,14 @@ from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_groq import ChatGroq
 from langchain_core.output_parsers import JsonOutputParser
+GROQ_API_KEY=st.secrets['GROQ_API_KEY']
 
 load_dotenv()
 
 llm = ChatGroq(
     model_name="llama-3.3-70b-versatile",
     temperature=0.5,
-    groq_api_key="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"
+    groq_api_key=GROQ_API_KEY
 )
 
 
