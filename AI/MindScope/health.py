@@ -7,6 +7,7 @@ from langchain_groq import ChatGroq
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 import time
+GROQ_API_KEY=st.secrets['GROQ_API_KEY']
 
 # Set page config
 st.set_page_config(
@@ -92,7 +93,7 @@ def initialize_llm():
     return ChatGroq(
         model="llama-3.3-70b-versatile",
         temperature=0,
-        groq_api_key="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"
+        groq_api_key=GROQ_API_KEY
     )
 
 
