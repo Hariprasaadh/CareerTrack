@@ -2,6 +2,7 @@ import streamlit as st
 from typing import Dict, List
 from langchain_groq import ChatGroq
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.prompts import PromptTemplate
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import LLMChain
 from langchain.schema import SystemMessage, HumanMessage, AIMessage
@@ -12,8 +13,9 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from collections import defaultdict
-GROQ_API_KEY=st.secrets['GROQ_API_KEY']
 
+GROQ_API_KEY1=st.secrets["GROQ_API_KEY1"]
+GROQ_API_KEY2=st.secrets["GROQ_API_KEY2"]
 
 
 class TherapyBot:
@@ -21,7 +23,7 @@ class TherapyBot:
         self.llm = ChatGroq(
             model="llama-3.3-70b-versatile",
             temperature=0.5,
-            groq_api_key=GROQ_API_KEY
+            groq_api_key=GROQ_API_KEY1
         )
 
         self.memory = ConversationBufferMemory(
@@ -49,8 +51,13 @@ class TherapyBot:
 
         Emergency resources to provide when needed:
         - National Mental Health Helpline (India): 14416 or 1-800-599-0019
+        - Tele-MANAS: 14416 (24/7, toll-free)
+        - KIRAN: 1800-5990019 (24/7, toll-free)
         - AASRA (India): +91-9820466726 or +91-22-27546669
-        - Vandrevala Foundation Helpline (India): 1860 266 2345 or +91 9999 666 555"""
+        - Vandrevala Foundation Helpline (India): 1860 266 2345 or +91 9999 666 555
+        
+        Remember you are a chatbot based in India. 
+        """
 
         self.prompt = ChatPromptTemplate.from_messages([
             ("system", self.system_prompt),
@@ -87,30 +94,46 @@ class TherapyBot:
         return """I'm very concerned about what you're telling me and I want to make sure you're safe.
         Please know that you're not alone and there are people who want to help:
 
-        National Mental Health Helpline (India): 14416 or 1-800-599-0019
-        AASRA (India): +91-9820466726 or +91-22-27546669
-        Vandrevala Foundation Helpline (India): 1860 266 2345 or +91 9999 666 555
+        - National Mental Health Helpline (India): 14416 or 1-800-599-0019
+        - Tele-MANAS: 14416 (24/7, toll-free)
+        - KIRAN: 1800-5990019 (24/7, toll-free)
+        - AASRA (India): +91-9820466726 or +91-22-27546669
+        - Vandrevala Foundation Helpline (India): 1860 266 2345 or +91 9999 666 555
 
         Would you be willing to reach out to one of these services? They have trained professionals who can provide immediate support."""
 
     def track_mood(self, message: str, response: str):
         timestamp = datetime.now().isoformat()
-        mood_indicators = {
-            'positive': ['happy', 'better', 'good', 'great', 'hopeful', 'excited', 'joyful', 'content', 'optimistic'],
-            'negative': ['sad', 'depressed', 'anxious', 'worried', 'stressed', 'hopeless', 'down', 'angry',
-                         'frustrated'],
-            'neutral': ['okay', 'fine', 'normal', 'meh', 'so-so', 'neutral', 'indifferent']
-        }
+        mood_llm=ChatGroq(
+            model="llama-3.3-70b-versatile",
+            temperature=0.5,
+            groq_api_key=GROQ_API_KEY2
+        )
+        prompt_extract = PromptTemplate.from_template(
+            """
+               User Message:
+                {message}
 
-        mood = 'neutral'
-        for sentiment, words in mood_indicators.items():
-            if any(word in message.lower() for word in words):
-                mood = sentiment
-                break
+               INSTRUCTION:
+               You are a senior mental health counselor specializing in detecting a user's mood from their message. Analyze the given message and classify the mood into one of the following categories:
+
+                positive
+                negative
+                neutral
+                
+                Output Format:
+
+                Return only a single word: positive, negative, or neutral.
+                If unsure, return "neutral".
+                Strictly no additional text or explanations.    
+               """
+        )
+        chain_extract = prompt_extract | mood_llm
+        res = chain_extract.invoke(input={'message': message})
 
         self.mood_history.append({
             'timestamp': timestamp,
-            'mood': mood,
+            'mood': res.content,
             'message': message
         })
 
